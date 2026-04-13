@@ -2,25 +2,25 @@
 def temperatura():
   c = float (input("Digite a temperatura em Celsius: "))
   f = (c * 9/5) + 32
-  print("Fahrenheit: ", f)
+  print("Fahrenheit: ", round(f, 2) )
 
 #Função que faz a conversão de metros para pés#
 def metros():
   m = float(input("Digite o valor em metros: "))
-  p = m * 3.28
-  print("Pés: ", p)
+  p = m * 3.280
+  print("Pés: ", round(p, 2))
 
 #Função que faz a conversão de Quilos para libras#
 def quilos():
   kg = float(input("Digite o valor em quilos(Kg): "))
   lb = kg * 2.20
-  print("Libras: ", lb)
+  print("Libras: ", round(lb, 2))
 
 #Função que faz a conversão de quilometros para milhas#
 def quilometros():
     km = float(input("Digite o valor em quilometros(Km): "))
-    ml = km * 1.609
-    print("Milhas: ", ml)
+    ml = km * 0.621
+    print("Milhas: ", round (ml, 2))
 
 #Menu pnde o usuário pode escolher o que quer converter #
 def menu():
@@ -44,6 +44,7 @@ def menu():
       quilometros()
   elif opcao == 5:
     print("Encerrando programa")
+    exit()
   else:
         print("Opção inválida")
 
@@ -51,8 +52,14 @@ def menu():
 while True:
     menu()
 
-    resposta = input("Deseja fazer outra conversão? (s/n): ").lower()
+    # loop de validação
+    while True:
+        resposta = input("Deseja fazer outra conversão? (s/n): ").lower()
 
-    if resposta != 's':
-        print("Encerrando o programa...")
-        break
+        if resposta == 's':
+            break
+        elif resposta == 'n':
+            print("Encerrando programa...")
+            exit()
+        else:
+            print("Opção inválida! Digite apenas 's' ou 'n'")
