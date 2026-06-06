@@ -2,9 +2,25 @@
 
 ## Descrição
 
-Este projeto é um conversor de unidades desenvolvido em Python utilizando funções, estruturas condicionais e laços de repetição.
+Projeto desenvolvido em Python utilizando Flask com o objetivo de realizar conversões de unidades de forma rápida e prática.
 
-O programa permite converter diferentes tipos de medidas através de um menu interativo no terminal.
+O sistema permite converter:
+
+* Celsius ↔ Fahrenheit
+* Metros ↔ Pés
+* Quilos ↔ Libras
+* Quilômetros ↔ Milhas
+
+O projeto foi desenvolvido como MVP acadêmico para a disciplina Development With Python.
+
+---
+
+# Tecnologias Utilizadas
+
+* Python 3
+* Flask
+* HTML5
+* CSS3
 
 ---
 
@@ -12,111 +28,51 @@ O programa permite converter diferentes tipos de medidas através de um menu int
 
 ## Conversões disponíveis
 
-### Temperatura
-
-* Celsius → Fahrenheit
-* Fahrenheit → Celsius
-
-### Distância
-
-* Metros → Pés
-* Pés → Metros
-
-### Massa
-
-* Quilos → Libras
-* Libras → Quilos
-
-### Quilometragem
-
-* Quilômetros → Milhas
-* Milhas → Quilômetros
+* Temperatura
+* Distância
+* Massa
+* Quilometragem
 
 ---
 
-# Tecnologias utilizadas
-
-* Python 3
-
----
-
-# Estrutura do projeto
+# Estrutura do Projeto
 
 ```bash
-Conversor_Medidas/
+Conversor-Unidades/
 │
 ├── Conversor.py
-└── README.md
+├── README.md
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    └── style.css
 ```
 
 ---
 
-# Como executar
+# Como executar o projeto
 
-## 1. Instalar o Python
-
-Baixe o Python no site oficial:
-
-https://www.python.org/
-
----
-
-## 2. Executar o projeto
-
-Abra o terminal na pasta do projeto e execute:
+## Executar aplicação
 
 ```bash
-python Conversor.py
+py conversor.py
 ```
 
 ---
 
-# Exemplo de uso
+# Acessar no navegador
 
 ```bash
-=== Conversor de unidades ===
-
-1 - Temperatura
-2 - Metros
-3 - Quilos
-4 - Quilômetros
-5 - Sair
-
-Escolha uma das opções: 1
-
-1 - Celsius para Fahrenheit
-2 - Fahrenheit para Celsius
-
-Escolha uma das opções: 1
-Digite a temperatura em Celsius: 37.8
-
-Fahrenheit: 100.04
+http://127.0.0.1:5000
 ```
 
 ---
 
-# Conceitos aplicados
+# Objetivo do Projeto
 
-O projeto utiliza:
-
-* Funções
-* Estruturas condicionais (`if`, `elif`, `else`)
-* Laços de repetição (`while`)
-* Entrada de dados com `input()`
-* Conversão de tipos (`int`, `float`)
-* Arredondamento com `round()`
-
----
-
-# Melhorias futuras
-
-Possíveis melhorias para versões futuras:
-
-* Interface gráfica
-* Tratamento de erros com `try/except`
-* Conversão de mais unidades
-* Interface web
-* Histórico de conversões
+Além da finalidade acadêmica, o sistema pode auxiliar usuários em conversões do dia a dia, evitando cálculos manuais e facilitando conversões internacionais de temperatura, peso e distância.
 
 ---
 
