@@ -57,7 +57,7 @@ Conversor-Unidades/
 ## Executar aplicação
 
 ```bash
-py conversor.py
+py Conversor.py
 ```
 
 ---
