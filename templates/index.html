@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Conversor de Unidades</h1>
+
+        <form method="POST">
+
+            <input type="number" step="any" name="valor" placeholder="Digite um valor" required>
+
+            <select name="tipo">
+
+                <option value="c_f">Celsius → Fahrenheit</option>
+                <option value="f_c">Fahrenheit → Celsius</option>
+
+                <option value="m_p">Metros → Pés</option>
+                <option value="p_m">Pés → Metros</option>
+
+                <option value="kg_lb">Quilos → Libras</option>
+                <option value="lb_kg">Libras → Quilos</option>
+
+                <option value="km_ml">Km → Milhas</option>
+                <option value="ml_km">Milhas → Km</option>
+
+            </select>
+
+            <button type="submit">Converter</button>
+
+        </form>
+
+        {% if resultado %}
+            <h2>Resultado: {{ resultado }}</h2>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
