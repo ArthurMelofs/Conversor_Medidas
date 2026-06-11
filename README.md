@@ -11,7 +11,7 @@ O sistema permite converter:
 * Quilos ↔ Libras
 * Quilômetros ↔ Milhas
 
-O projeto foi desenvolvido como MVP acadêmico para a disciplina Development With Python.
+O projeto foi desenvolvido para fins acadêmicos para a disciplina Development With Python.
 
 ---
 
@@ -37,8 +37,7 @@ O projeto foi desenvolvido como MVP acadêmico para a disciplina Development Wit
 
 # Estrutura do Projeto
 
-```bash
-Conversor-Unidades/
+Conversor_Medidas/
 │
 ├── Conversor.py
 ├── README.md
@@ -48,7 +47,6 @@ Conversor-Unidades/
 │
 └── static/
     └── style.css
-```
 
 ---
 
